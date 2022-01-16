@@ -1,0 +1,42 @@
+<!-- !とタブキーでいい感じのHTMLフォーマット出てくる -->
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JavaScriptの様々な値とデータ型</h1>
+    <script>
+      // Premitive
+      // Number型
+      console.log(1)
+      console.log(1 + 2)
+      // 文字列型
+      console.log("やっほー")
+      console.log("やっほー" + "ヤッホー")
+      console.log("1" + "2")
+      // Boolean型
+      // true or false
+      // console.log(true)
+      const x = 2
+      const booleanTest = x === 2
+      console.log(booleanTest)
+
+      // オブジェクト
+      const Akahoshi = {
+        name: "あかほし", // キー: バリュー => プロパティ
+        age: 24,
+        hobbies: ["カラオケ", "テニス"],
+        family: {
+          papaName: "お父さん",
+          mamaName: "お母さん",
+        },
+      }
+      console.log(Akahoshi) // オブジェクト全部
+      console.log(Akahoshi.name) // オブジェクトの中の特定の情報にアクセス
+    </script>
+  </body>
+</html>

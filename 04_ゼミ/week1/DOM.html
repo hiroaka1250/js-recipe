@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>DOMについて</h1>
+    <!-- DOMは、Document Object Model の略。要するにオブジェクト -->
+    <div id="youso">ここの内容が変わるよ</div>
+    <button id="button">押せば変わる</button>
+    <script>
+      const element = document.getElementById("youso")
+      const Button = document.getElementById("button")
+      console.log(element)
+
+      //   element.textContent = "DOMを通じて変えたよ"
+
+      // イベントが起きたタイミングでコードを実行する方法
+      Button.onclick = function () {
+        element.textContent = "DOMを通じて変えたよ"
+      }
+
+      //   DOMって？
+    </script>
+  </body>
+</html>
